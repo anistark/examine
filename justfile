@@ -93,5 +93,5 @@ validate:
     cargo verify-project
 
 # Publish to crates.io
-publish:
+publish: prepare-release
     cargo publish

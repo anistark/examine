@@ -12,6 +12,13 @@ Simple project detection and analysis. Pass a path, get comprehensive project in
 
 > Highly experimental at the moment!
 
+## Installation
+
+```toml
+[dependencies]
+examine = "0.1.0"
+```
+
 ## Usage
 
 ```rust
@@ -24,43 +31,25 @@ println!("Status: {}", info.language_status);
 println!("Framework: {}", info.framework.unwrap_or("None".to_string()));
 ```
 
-## Installation
+## Current Status
 
-```toml
-[dependencies]
-examine = "0.1.0"
-```
-
-## What it detects
-
-### Languages
-
-| Language | Status |
-| --- | --- |
-| ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white) | ✅ |
-| ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) | ✅ |
-|![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) | ✅ |
-| ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) | ✅ |
-| ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) | WIP |
-| ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)| TODO |
-| ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)| TODO |
-| ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)| TODO |
-| ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)| TODO |
-| ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)| TODO |
-| ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)| TODO |
-| ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)| TODO |
-| ![Elixir](https://img.shields.io/badge/elixir-%234B275F.svg?style=for-the-badge&logo=elixir&logoColor=white)| TODO |
-| ![Haskell](https://img.shields.io/badge/Haskell-5e5086?style=for-the-badge&logo=haskell&logoColor=white)| TODO |
-| ![Clojure](https://img.shields.io/badge/Clojure-%23Clojure.svg?style=for-the-badge&logo=Clojure&logoColor=Clojure)| TODO |
-
-### Frameworks
-
-- **Rust**: Axum, Actix Web, Rocket, Warp, Bevy, Clap
-- **JavaScript**: React, Vue, Angular, Svelte, Express, Next.js, Nuxt
-- **Go**: Gin, Echo, Fiber, Gorilla Mux
-- **Python**: Django, Flask, FastAPI
-
-**End-of-life tracking** for Node.js, Python, Go, Rust, and Java versions.
+| Language | Project Detection | Version Detection | EOL Tracking | Frameworks Supported |
+| --- | --- | --- | --- | --- |
+| ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white) | ✅ | ✅ | ✅ | Axum, Actix Web, Rocket, Warp, Bevy, Clap |
+| ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) | ✅ | ✅ | ✅ | React, Vue, Angular, Svelte, Express, Next.js, Nuxt |
+|![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) | ✅ | ✅ | ✅ | Gin, Echo, Fiber, Gorilla Mux |
+| ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) | ✅ | ✅ | ✅ | Django, Flask, FastAPI |
+| ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) | ✅ | WIP | WIP | |
+| ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)| ✅ | TODO | | |
+| ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)| ✅ | TODO | | |
+| ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)| ✅ | TODO | | |
+| ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)| ✅ | TODO | | |
+| ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)| ✅ | TODO | | |
+| ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)| ✅ | TODO | | |
+| ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)| ✅ | TODO | | |
+| ![Elixir](https://img.shields.io/badge/elixir-%234B275F.svg?style=for-the-badge&logo=elixir&logoColor=white)| ✅ | TODO | | |
+| ![Haskell](https://img.shields.io/badge/Haskell-5e5086?style=for-the-badge&logo=haskell&logoColor=white)| ✅ | TODO | | |
+| ![Clojure](https://img.shields.io/badge/Clojure-%23Clojure.svg?style=for-the-badge&logo=Clojure&logoColor=Clojure)| ✅ | TODO | | |
 
 ## Example Output
 

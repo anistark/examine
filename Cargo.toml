@@ -1,13 +1,14 @@
 [package]
 name = "examine"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 description = "Simple project detection and analysis - just pass a path and get project info"
 readme = "README.md"
 license = "MIT"
+authors = ["Kumar Anirudha <chakra@anirudha.dev>"]
 repository = "https://github.com/anistark/examine"
 homepage = "https://github.com/anistark/examine"
-keywords = ["project", "detection", "language", "framework", "analysis"]
+keywords = ["project", "detection", "language", "framework", "analysis", "library"]
 categories = ["development-tools", "parsing"]
 include = ["src/**", "Cargo.toml", "README.md", "LICENSE"]
 documentation = "https://docs.rs/examine"
